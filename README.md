@@ -1,25 +1,27 @@
 📊 Adidas Product & Inventory Analysis (BR Market)
-📝 პროექტის მიმოხილვა
-პროექტი მიზნად ისახავს ბრაზილიის ბაზარზე არსებული Adidas-ის პროდუქციის კომპლექსურ ანალიზს. მონაცემების დამუშავება მოხდა SQL-ის გამოყენებით, ხოლო ვიზუალიზაცია და ბიზნეს-ინსაიტების გენერირება — Power BI-ში.
 
-🛠 ტექნიკური ნაწილი (SQL)
-მონაცემების დამუშავებისას გამოყენებულია SQL-ის შემდეგი "Advanced" ტექნიკები:
+📝 Project Overview
 
-Data Cleaning: დუბლიკატების ფილტრაცია ROW_NUMBER() ფუნქციით და არასრულყოფილი ჩანაწერების (Missing prices, invalid sizes) გასუფთავება.
-Business Logic: ფასნამატის (Markup), მოგების მარჟისა და ფულადი სხვაობის (Difference in Value) გამოთვლა რთული მათემატიკური ფორმულებით.
-Segmentation: პროდუქტების დაყოფა საფასო კატეგორიებად (Budget, Mid-Range, Premium) და ფასდაკლების ინტენსივობის მიხედვით.
-Inventory Analysis: "Stock Fill Rate"-ის გამოთვლა, რაც აჩვენებს ხელმისაწვდომი ზომების წილს თითოეული კატეგორიისთვის.
+This project focuses on a comprehensive analysis of Adidas products within the Brazilian market. Data processing and engineering were handled via SQL, while Power BI was utilized for dynamic visualization and business insight generation.
 
-📈 ვიზუალიზაცია (Power BI)
-Power BI რეპორტში რეალიზებულია:
-Dynamic KPIs: გაყიდვების ფასისა და თვითღირებულების შედარებითი ანალიზი.
-Assortment Health: ზომების ხელმისაწვდომობის ინტერაქტიული მატრიცა, რომელიც აჩვენებს "Out of Stock" პრობლემებს.
-Price Strategy Analysis: ფასდაკლებების გავლენა სხვადასხვა საფასო სეგმენტზე.
-DAX Measures: გამოყენებულია DAX ფუნქციები საშუალო რეიტინგების, გაყიდვების წილისა და ფასების ვარიაციულობის დასათვლელად.
+🛠 Technical Implementation (SQL)
+
+Advanced SQL techniques were applied to clean, transform, and model the dataset:
+Data Cleaning: Filtered out duplicates using the ROW_NUMBER() window function and handled incomplete records (missing prices, invalid sizes) to ensure data integrity.
+Business Logic: Calculated Key Performance Indicators including Markup, Profit Margins, and Difference in Value using complex mathematical formulations.
+Segmentation: Categorized products into price tiers (Budget, Mid-Range, Premium) and segmented them based on discount intensity.
+Inventory Analysis: Computed the Stock Fill Rate to evaluate the proportion of available sizes across each product category.
+
+📈 Visualizations & Insights (Power BI)
+
+The interactive Power BI report features:
+Dynamic KPIs: Comparative analysis tracking selling price variations against product cost.
+Assortment Health: An interactive size-availability matrix designed to quickly spot Out of Stock (OOS) issues across product lines.
+Pricing Strategy Analysis: Deep-dive into how discounts impact profit margins across different price segments.
+Advanced DAX Measures: Developed formulas to calculate average ratings, sales shares, and price volatility.
 
 
 
-ანალიზმა აჩვენა კავშირი პროდუქტის რეიტინგსა და მის საფასო სეგმენტს შორის.
 <img width="878" height="484" alt="adidas1" src="https://github.com/user-attachments/assets/cd67f126-fd78-43c3-8a38-fc76f5ee908e" />
 <img width="874" height="489" alt="adidas2" src="https://github.com/user-attachments/assets/d31d0d9e-cf60-4422-a230-52b66af39d84" />
 <img width="873" height="487" alt="adidas3" src="https://github.com/user-attachments/assets/723360a2-9def-4980-9653-c6028535281a" />
